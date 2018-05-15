@@ -1,20 +1,65 @@
 ﻿p{
-color: #047;
+color: #000;
 font-size: 1.3em
 }
 a{
 color:blue
 }
 
+body {
+   font-size: 0.8em;
+   color: navy;
+}
 
 h1 {
 color:#ffc;
-background-color:#079;
+background-color:#009;
 }
 
-#list{
-background-color:#079;
+
+
+
+.class {
+color:#cc0;
+background-color:#090;
 }
+
+#ident{
+background-color:#570;
+}
+
+a.selector:hover{
+color:red;
+}
+
+.overflow{
+overflow: auto;
+ max-height: 100%;
+}
+
+#navigation {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 10em;
+}
+
+#navigation2 {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 10em;
+}
+
+#content {
+   /* устанавливаем верхний и нижний отступы в 0, а правый и левый – в 10em */
+   margin: 0 10em;
+}
+
+
+
+/*горизонтальное меню*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
 .menu-main li {display: inline-block;}
 .menu-main li:after {
@@ -29,7 +74,7 @@ background-color:#079;
   letter-spacing: 2px;
   position: relative;
   padding-bottom: 20px;
-  margin: 20px 30px 0 30px;
+  margin: 0 34px 0 30px;
   font-size: 17px;
   text-transform: uppercase;
   display: inline-block;
@@ -41,31 +86,33 @@ background-color:#079;
 .menu-main a:after {
   content: "";
   position: absolute;
-  height: 0.5px;
+  height: 1px;
   top: auto;
   right: 30%;
   bottom: -5px;
   left: 30%;
   background: #1fc;
-  transition: 2s;
+  transition: .8s;
 }
 
 
-
-@media(max-width: 500px) {
-	body p{font-size: 0.6em;
-color:#fff}
+@media(max-width: 350px) {
+	body p{
+		background: #047;
+                display:none
+	}
 }
-
-
-@media (max-width: 500px){
-body img{width: 100%;}
+@media (max-width: 350px){
+body img{
+    width: 100%;
 }
-
-@media(max-width: 500px) {
-	body{background: #200540}
 }
-
+@media(max-width: 350px) {
+	body{
+		background: #200540
+                
+	}
+            }
 
 
 
